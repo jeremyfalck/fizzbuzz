@@ -39,6 +39,9 @@ class FizzBuzzPagerAdapter @Inject constructor() :
             )
         )
 
+    /*
+    * Animation for RecyclerView items
+    * */
     private fun setAnimation(viewToAnimate: View, position: Int) {
         if (position > lastPosition) {
             val anim = ScaleAnimation(

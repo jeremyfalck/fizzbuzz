@@ -31,6 +31,10 @@ class CalculateFizzBuzzUseCaseImpl @Inject constructor(
             throw NullNumberException("Second number cannot be null")
         }
 
+        /*
+        * Everytime the use case is called, the paging source is updated with the new numbers.
+        * No need to create a new paging source.
+        * */
         dataSource.firstNumber = firstNumber
         dataSource.secondNumber = secondNumber
 

@@ -11,7 +11,9 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-
+/*
+* This module is based on the calculator module in order to be provided with its dependencies
+* */
 @Module(includes = [FizzBuzzCalculatorModule::class])
 @InstallIn(SingletonComponent::class)
 object CalculateFizzBuzzUseCaseModule {

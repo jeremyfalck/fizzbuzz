@@ -22,12 +22,14 @@ class FizzBuzzListViewModel @Inject constructor(private val calculateFizzBuzzUse
 
     private val errorLiveData: MutableLiveData<String> = MutableLiveData()
 
+    /*
+    * The view doesn't know that the live datas are mutable that way
+    * */
     fun getFizzBuzzPagingLiveData(): LiveData<PagingData<String>> = fizzBuzzPagingLiveData
     fun getErrorLiveData(): LiveData<String> = errorLiveData
 
 
     fun calculateNewList(firstNumber: Int?, secondNumber: Int?) {
-
         launch {
             try {
                 calculateFizzBuzzUseCase.invoke(firstNumber, secondNumber).cachedIn(this)
