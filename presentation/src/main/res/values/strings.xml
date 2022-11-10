@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FizzBuzz</string>
+    <string name="first_number">Entrez votre premier entier</string>
+    <string name="second_number">Entrez votre second entier</string>
+</resources>
