@@ -4,10 +4,11 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.jfalck.domain.calculator.FizzBuzzCalculator
 
+
+// This class is useful for manaing pages of data in a list
 class FizzBuzzPagingSource(
     private val calculator: FizzBuzzCalculator
-) :
-    PagingSource<Int, String>() {
+) : PagingSource<Int, String>() {
 
     var firstNumber: Int? = null
     var secondNumber: Int? = null

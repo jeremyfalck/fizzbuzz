@@ -2,4 +2,5 @@
     <string name="app_name">FizzBuzz</string>
     <string name="first_number">Entrez votre premier entier</string>
     <string name="second_number">Entrez votre second entier</string>
+    <string name="welcome_message">Bienvenue sur l\'app de test FizzBuzz !</string>
 </resources>

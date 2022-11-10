@@ -1,5 +1,6 @@
 package com.jfalck.domain.usecase
 
+// Common values for applying FizzBuzz logic
 object FizzBuzzValues {
     const val PAGE_SIZE = 20
     const val PREFETCH_DISTANCE = 10
